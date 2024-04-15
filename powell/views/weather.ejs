@@ -1,0 +1,18 @@
+<body>
+    <h1>Weather Forecast</h1>
+    <ul class="weather-list">
+      <% weatherData.forEach(function(weather) { %>
+        <li class="weather-item">
+          <img src="/<%= weather.imageURL %>.png" alt="Weather Image">
+          <div class="text-content">
+            <strong>Date:</strong> <%= new Date(weather.date).toDateString() %><br>
+            <strong>High:</strong> <%= weather.max_temp %>°<br>
+            <strong>Low:</strong> <%= weather.min_temp %>°<br>
+            <strong>Avg Wind Speed:</strong> <%= weather.avg_wind_speed %> mph<br>
+            <strong>Forecast:</strong> <%= weather.short_forecast %><br>
+            <strong>Optimal Boating Day:</strong> <%= (weather.optimal_boating_day === true || weather.optimal_boating_day === 'true') ? 'Yes' : 'No' %>
+          </div>
+        </li>
+      <% }); %>
+    </ul>
+  </body>

@@ -1,0 +1,18 @@
+<!-- favorite-styles.ejs -->
+
+<!-- favorite-styles.ejs -->
+
+<h1>Favorite Styles</h1>
+<% if (styles.length > 0) { %>
+  <ul class="gallery">
+    <% styles.forEach((style) => { %>
+      <li>
+        <a href="/styles/<%=style.titleSlug%>" name="<%=style.titleSlug%>">
+          <img src="/<%=style.imageURL%>" alt="<%=style.description%>">
+        </a>
+      </li>
+    <% }); %>
+  </ul>
+<% } else { %>
+  <p>You haven't favorited any styles yet.</p>
+<% } %>

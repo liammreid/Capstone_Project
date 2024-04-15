@@ -1,0 +1,887 @@
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px 15vw; /* Padding added to prevent side images from reaching the layout borders */
+    min-width: 960px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* Elegant serif for headings */
+}
+
+p, blockquote, .highlight {
+    color: #252525;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #252525;
+    text-decoration: none; /* Non-underlined links */
+}
+
+a:hover {
+    color: #898989;
+}
+
+/* Special Quotes or Highlighted Text */
+blockquote, .highlight {
+    font-family: 'Pacifico', cursive; /* Cursive for special sections */
+    font-size: 20px;
+    color: #2a7ab9; /* A color reminiscent of Lake Powell's water */
+}
+
+
+
+body {
+	background: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	min-width: 960px;
+	padding: 0;
+}
+p {
+	color: #252525;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}
+p a {
+	color: #252525;
+	text-decoration: underline;
+}
+p a:hover {
+	color: #898989;
+}
+
+#header {
+    background-color: #252525; /* Header background set to black */
+    color: #fff; /* Text color set to white for contrast */
+    margin: 0 auto;
+    padding: 44px 0 50px;
+    text-align: center;
+    width: 100%;
+}
+#header a.logo {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 340px;
+}
+#header a.logo img {
+	border: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#header ul {
+	margin: 0;
+	padding: 56px 0 0;
+}
+#header ul li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0 19px;
+}
+#header ul li a {
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 0 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#header ul li a:hover, #header ul li.selected a {
+	color: #2a7ab9;
+}
+#body {
+	margin: 0;
+	padding: 0 0 30px;
+	text-align: center;
+}
+#body h1 {
+	color: rgb(0, 0, 0);
+	display: inline;
+	font-family: poller_oneregular;
+	font-size: 35px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+#body h1 span {
+	background: #252525;
+	display: inline-block;
+	padding: 15px 28px 12px;
+}
+#body > div {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+#body > div img {
+	border: 2px solid #292929;
+	margin: 24px 0 0;
+	padding: 0;
+}
+#body > div .article {
+	margin: 0 auto;
+	padding: 30px 30px 0;
+	width: 560px;
+}
+#body > div .article h2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0 0 30px;
+}
+#body > div .article h3 {
+	color: #252525;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+}
+#body > div .article h4 {
+	background: #000000;
+	color: #fff;
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0 0 30px;
+	padding: 8px 27px 10px;
+}
+#body > div .article p {
+	margin: 0 0 30px;
+}
+#body div ul {
+	margin: 0;
+	padding: 24px 10px 0;
+	width: 940px;
+}
+#body div ul li {
+	border: 2px solid #1a1a1a;
+	display: block;
+	list-style: none;
+	margin: 0 0 13px;
+	overflow: hidden;
+	padding: 0;
+}
+#body div ul li .figure {
+	border-right: 2px solid #1a1a1a;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 376px;
+}
+#body div ul li img {
+	border: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+	opacity: 0.8;
+	transition: 0.5s ease-in-out;
+}
+#body div ul li .figure:hover img {
+	opacity: 1;
+}
+#body div ul li div {
+	float: left;
+	margin: 0;
+	padding: 63px 0 20px;
+	width: 558px;
+}
+#body div ul li div h3 {
+	color: #252525;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+#body div ul li div p {
+	padding: 30px 30px 18px;
+}
+#body div ul li div a.more {
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0;
+	padding: 8px 28px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#body div ul li div a.more:hover {
+	color: #252525;
+	background: #fff;
+	border: 2px solid #252525;
+}
+#body #featured {
+	margin: 0 0 13px;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+#body #featured img {
+	border: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#body #featured div {
+	left: 50%;
+	margin-left: -480px;
+	margin-top: -171px;
+	padding: 0 0 0 470px;
+	position: absolute;
+	top: 50%;
+	text-align: left;
+	width: 490px;
+}
+#body #featured div h2 {
+	background: #fff;
+	color: #000;
+	display: inline-block;
+	font-family: poller_oneregular;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0 0 18px;
+	padding: 23px 27px 20px;
+	text-transform: uppercase;
+}
+#body #featured div span {
+	background: #252525;
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	margin: 7px 0;
+	padding: 12px 27px;
+}
+#body #featured div a {
+	background: #a83e1a;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	margin: 15px 0 0;
+	padding: 26px 27px 22px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#body #featured div a:hover {
+	background: #1fc3bc;
+}
+#body > ul {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 24px 0 0;
+	width: 960px;
+}
+#body > ul li {
+	display: block;
+	float: left;
+	margin: 0 10px 20px;
+	padding: 0;
+	width: 300px;
+}
+#body > ul li a {
+	color: #000;
+	display: block;
+	font-family: poller_oneregular;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#body > ul li a img {
+	border: 2px solid #1a1a1a;
+	display: block;
+	margin: 0;
+	padding: 0;
+	opacity: .8;
+	transition: 0.5s ease-in-out;
+}
+#body > ul li a:hover img {
+	opacity: 1;
+}
+#body > ul li a span {
+	display: block;
+	margin: 0;
+	padding: 33px 0 0;
+}
+#body form {
+	margin: 0 auto;
+	padding: 24px 0 0;
+	width: 620px;
+}
+#body form input, #body form textarea {
+	border: 2px solid #252525;
+	color: #252525;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0 0 37px;
+	padding: 20px 10px;
+	width: 596px;
+}
+
+#body form input {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#body form textarea {
+	height: 175px;
+	overflow: auto;
+	resize: none;
+}
+
+#body form div.disabled input, #body form div.disabled textarea{
+	background-color: #ccc;
+}
+#body form #send {
+	background: #252525;
+	color: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: inline-block;
+	padding: 20px 28px;
+	width: auto;
+}
+#body form #send:hover {
+	background: #1fc3bc;
+	color: #252525;
+	cursor: pointer;
+}
+
+#body form #cancel {
+	text-align: center;
+	text-transform: uppercase;
+	color: #252525;
+	background: #fff;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: inline-block;
+	padding: 20px 28px;
+	width: auto;
+}
+#body form #cancel:hover {
+	color: #fff;
+	background: #ae6210;
+	cursor: pointer;
+}
+
+/* Table styles */
+
+
+#body table {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.25;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 20px;
+	padding: 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: fixed;
+  }
+  
+  #body table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+  }
+  
+  #body table tr {
+	background-color: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: .35em;
+  }
+  
+  #body table th,
+  #body table td {
+	padding: .625em;
+	text-align: center;
+  }
+  
+  #body table th {
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+	#body table {
+	  border: 0;
+	}
+  
+	#body table caption {
+	  font-size: 1.3em;
+	}
+	
+	#body table thead {
+	  border: none;
+	  clip: rect(0 0 0 0);
+	  height: 1px;
+	  margin: -1px;
+	  overflow: hidden;
+	  padding: 0;
+	  position: absolute;
+	  width: 1px;
+	}
+	
+	#body table tr {
+	  border-bottom: 3px solid #ddd;
+	  display: block;
+	  margin-bottom: .625em;
+	}
+	
+	#body table td {
+	  border-bottom: 1px solid #ddd;
+	  display: block;
+	  font-size: .8em;
+	  text-align: right;
+	}
+	
+	#body table td::before {
+	  /*
+	  * aria-label has no advantage, it won't be read inside a table
+	  content: attr(aria-label);
+	  */
+	  content: attr(data-label);
+	  float: left;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	}
+	
+	#body table td:last-child {
+	  border-bottom: 0;
+	}
+}
+
+/* Button styles */
+
+a.button1{
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.1em solid #d27b08;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	text-align:center;
+	transition: all 0.2s;
+	background-color:#363636;
+	}
+	a.button1:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+	}
+	@media all and (max-width:30em){
+	 a.button1{
+	display:block;
+	margin:0.4em auto;
+	 }
+	}
+#footer {
+	background: #252525;
+	margin: 0;
+	padding: 36px 0 42px;
+}
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	width: 960px;
+}
+#footer div p {
+	color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+#footer div ul {
+	display: block;
+	float: right;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 256px;
+}
+#footer div ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	width: 44px;
+}
+#footer div ul li a {
+	background: url(../images/icons.jpg) no-repeat 0 0;
+	display: block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+	width: 44px;
+}
+#footer div ul li #twitter {
+	background-position: 0 0;
+}
+#footer div ul li #twitter:hover {
+	background-position: -44px 0;
+}
+#footer div ul li #facebook {
+	background-position: 0 -44px;
+}
+#footer div ul li #facebook:hover {
+	background-position: -44px -44px;
+}
+#footer div ul li #googleplus {
+	background-position: 0 -88px;
+}
+#footer div ul li #googleplus:hover {
+	background-position: -44px -88px;
+}
+#footer div ul li #pinterest {
+	background-position: 0 -132px;
+}
+#footer div ul li #pinterest:hover {
+	background-position: -44px -132px;
+}
+
+/* Gallery CSS adjustments to view whole photos */
+.gallery li {
+    list-style: none;
+    margin-bottom: 2rem;
+    overflow: hidden; /* Hide excess parts of the images */
+    position: relative; /* To position the overlay or other elements absolutely within the li if needed */
+    height: 200px; /* Fixed height for uniformity */
+}
+
+.gallery img {
+    width: 100%; /* Make image take full width of the container */
+    height: 100%; /* Make image take full height of the container */
+    object-fit: contain; /* Ensure the whole image is visible */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover for effect */
+}
+
+/* Responsive grid layout for gallery items */
+@media (min-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Responsive grid columns */
+        gap: 1rem; /* Space between images */
+    }
+}
+  /* Responsive grid for gallery items */
+  @media (min-width: 768px) {
+	.gallery {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	  gap: 1rem;
+	}
+  }
+  
+  .logo {
+	display: block; /* Makes the image a block-level element */
+	margin: 300px; /* Centers the image */
+	width: 300px ; /* Your desired width */
+	height: auto; /* Maintain aspect ratio */
+  }
+
+  .logo-container {
+	text-align: center;
+  }
+  
+  .image-container img {
+	max-width: 75%; /* Makes the image width responsive to the container size */
+	height: auto; /* Keeps the image height proportional to its width */
+	display: block; /* Prevents inline default spacing */
+	margin: 0 auto; /* Centers the image within the container */
+  }
+
+    /* Responsive grid for gallery items */
+	@media (min-width: 768px) {
+		.gallery_big {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		  gap: 1rem;
+		}
+	  }
+
+/* Add or modify this in your style.css */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 2rem; /* Space out the blog tiles */
+}
+
+ul li .figure {
+    display: block; /* Allows margin auto to center the img */
+    overflow: hidden; /* Ensures the img doesn't overflow its container */
+    width: 100%; /* Adjust width as necessary */
+    height: 400px; /* Set a fixed height for uniformity */
+    border-radius: 5px; /* Optional: adds rounded corners to the images */
+    margin: auto; /* Center the image container */
+}
+
+ul li .figure img {
+    width: 100%; /* Causes the image to fill its container's width */
+    height: 100%; /* Causes the image to fill its container's height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: transform 0.3s ease-in-out; /* For a zoom effect on hover */
+}
+
+ul li .figure img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.weather-list {
+	display: grid; /* Using grid layout */
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid with minimum column width of 250px */
+	gap: 20px; /* Space between grid items */
+	padding: 20px;
+	list-style-type: none; /* No bullet points */
+  }
+  .weather-item {
+	background: #f4f4f4; /* Background color for items */
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  .weather-item img {
+	width: 100px; /* Fixed image width */
+	height: auto; /* Maintain image aspect ratio */
+	display: block;
+	margin: 0 auto 10px auto; /* Centers the image */
+  }
+  .text-content {
+	text-align: center; /* Left-aligns the text content */
+  }
+
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff; /* Light background for the content area */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.img-container {
+    width: 100%; /* Responsive width */
+    overflow: hidden; /* Prevents overflow */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.article {
+    color: #2a4d69; /* Blue tones reflecting water hues */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #204d74; /* Darker blue for headers */
+}
+
+h1 span {
+    border-bottom: 3px solid #3498db; /* Blue accent line */
+}
+
+/* Comments Section Styling */
+.comments-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light grey background for the section */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section h2 {
+    font-size: 1.8em;
+    color: #333; /* Dark grey color for headings */
+    margin-bottom: 20px;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-list li {
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1; /* Light grey border for separation */
+    margin-bottom: 10px;
+}
+
+.comment-list li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.comment-author {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.comment-body {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666; /* Medium grey for text */
+}
+
+.comment-date {
+    font-size: 0.9em;
+    color: #aaa; /* Light grey for the date */
+    margin-top: 5px;
+}
+
+/* Form Styling */
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.comment-form button {
+    background-color: #5cb85c; /* Green background for the submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comment-form button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Content area to ensure it stays centered and does not overlap with side images */
+.main-content {
+    margin: 0 auto; /* Center the content */
+    max-width: 960px; /* Adjust according to your content's maximum width */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Optional: Adds shadow for better focus on content */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 960px) {
+    body::before, body::after {
+        width: 10vw; /* Smaller side images on smaller screens */
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}

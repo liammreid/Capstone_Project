@@ -1,0 +1,50 @@
+<h1>About</h1>
+<div class="slideshow-container">
+<div id="slideshow">
+	<div class="slide active">
+		<img src="/images/about_1.jpeg" alt="Friends at Lake Powell 2022">
+	</div>
+	<div class="slide">
+		<img src="/images/about_2.jpeg" alt="Liam and Cole">
+	</div>
+	<div class="slide">
+		<img src="/images/about_3.jpeg" alt="Description of photo 3">
+	</div>
+	<div class="slide">
+		<img src="/images/about_4.jpeg" alt="Wilson Scow">
+	</div>
+	<div class="slide">
+		<img src="/images/about_6.jpeg" alt="Liam">
+	</div>
+	<div class="slide">
+		<img src="/images/about_7.jpeg" alt="Description of photo 3">
+	</div>
+</div>
+</div>
+<div class="article">
+	<h3>My Captsone Project</h3>
+	<p>
+		Welcome to my capstone project! My name is Liam Reid and I'm currently finishing up my masters degree at Utah State University in Data Analytics! This project is the culmination of 5 years of rigorous study and lots of sacrifice and hard work. Lake Powell for me has become one of my favorite places in the world. It is a place where once per year I can get an escape from the chaos of life and spend time with friends. I started going to Lake Powell back in 2020 when the world was still shut down on a whim for a guy’s trip. All of us were very much single at the time and were looking for something to do. I was hooked after the first day with the beauty and mystique of Lake Powell. Over the years we added more people as friends got married or found significant others. Yet the memories and people never changed. This place has allowed me to reconnect and spend quality time with childhood friends, and meet brand new friends too! This place holds a special place in my heart and this website is a tribute to that.
+
+		I would like to take this opportunity to thank a few people before I sign off. I would like to start by thanking my Heavenly Father for blessing me with opportunity to gain my masters degree. I wouldn’t be anywhere without him. Secondly, I would like to thank my family; mom, dad, and Harry, I wouldn’t have gotten through this 5 year stretch of college without your support and encouragement. I want to thank Tace Anderson for providing a good majority of these photos. You’re a legend dude! Finally, I want to thank my best friend, and my brother from another mother, Cole Nisson. I wouldn’t be the man I am today without you and your example. You have made a huge difference in my life and mean more than you’d know to me. I can’t thank you enough for your friendship over the years. 
+		
+		Please enjoy this website, and feel free to explore the wonders of Lake Powell!
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    // Change slide every 3 seconds
+    setInterval(showNextSlide, 3000);
+});
+
+	</script>
+	
+

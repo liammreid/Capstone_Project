@@ -1,0 +1,19 @@
+<h1><%=style.title%></h1>
+<div>
+	<% if (currentUser) { %>
+		<a href="/auth/favorite-styles/add/<%= style._id %>" class="btn btn-primary">
+			<h3>Save as Favorite</h3>
+		</a>
+	  <% } %>
+		
+</div>
+<div>
+	<div class="image-contianer">
+	<img src="/<%=style.imageURL%>" alt="<%=style.description%>">
+	</div>
+	<div class="article">
+		<h4><%=style.title%></h4>
+		<p><%=style.description%></p>
+	</div>
+</div>
+

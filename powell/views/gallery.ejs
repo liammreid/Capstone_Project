@@ -1,0 +1,17 @@
+<!-- Add this to your gallery.ejs -->
+<div>
+  <% if (currentUser) { %>
+    <a href="/styles/new-style">
+      <h2>New Style</h2>
+    </a>
+  <% } %>
+</div>
+<ul class="gallery">
+  <% styles.forEach((style) => { %>
+    <li>
+      <a href="/styles/<%= style.titleSlug %>" name="<%= style.titleSlug %>">
+        <img src="/<%= style.imageURL %>" alt="<%= style.description %>" class="style-image">
+      </a>
+    </li>
+  <% }) %>
+</ul>

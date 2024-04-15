@@ -1,0 +1,24 @@
+<h1>blog</h1>
+<div>
+    <% if (currentUser) { %>
+      <a href="/blog/new-post">
+        <h2>New Style</h2>
+      </a>
+    <% } %>
+  </div>
+<div>
+    <ul>
+        <% blogs.forEach((blog) => { %>
+            <li>
+                <a href="/blog/<%= blog.titleSlug %>" class="figure">
+                    <img src="/<%= blog.imageURL %>" alt="<%= blog.summary %>">
+                </a>
+                <div>
+                    <h3><%= blog.title %></h3>
+                    <p><%= blog.summary %></p>
+                    <a href="/blog/<%= blog.titleSlug %>" class="more">read this</a>
+                </div>
+            </li>
+        <% }) %>
+    </ul>
+</div>

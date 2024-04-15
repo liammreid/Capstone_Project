@@ -1,0 +1,26 @@
+<div>
+  <div>
+    <h1>Log In</h1>
+
+    <h3>Log in to your Powell Enthusiests account!</h3>
+    <form action="/auth/login" method="POST">
+      <label for="email">
+        <span>E-mail:</span>
+        <input type="email" name="email" id="email" />
+      </label>
+      <label for="password">
+        <span>Password:</span>
+        <input type="password" name="password" id="password" />
+      </label>
+      <input type="submit" value="Log In" />
+      <p><a href="/auth/signup" >New here?  Create an account!</a></p>
+      
+    </form>
+
+    <% if (messages.length > 0) { 
+      for (message of messages) { %>
+        <h2><%=message%></h2>
+      <% }} %>
+
+  </div>
+</div>

@@ -1,0 +1,79 @@
+[
+    {
+        "date": "2024-04-15",
+        "max_temp": 62,
+        "min_temp": 44,
+        "avg_wind_speed": 18.75,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Patchy Blowing Dust",
+        "imageURL": "images/image6",
+        "optimal_boating_day": false
+    },
+    {
+        "date": "2024-04-16",
+        "max_temp": 75,
+        "min_temp": 50,
+        "avg_wind_speed": 8.25,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Sunny",
+        "imageURL": "images/image1",
+        "optimal_boating_day": false
+    },
+    {
+        "date": "2024-04-17",
+        "max_temp": 80,
+        "min_temp": 54,
+        "avg_wind_speed": 13.5,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Sunny",
+        "imageURL": "images/image1",
+        "optimal_boating_day": false
+    },
+    {
+        "date": "2024-04-18",
+        "max_temp": 82,
+        "min_temp": 55,
+        "avg_wind_speed": 11.5,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Mostly Sunny",
+        "imageURL": "images/image1",
+        "optimal_boating_day": false
+    },
+    {
+        "date": "2024-04-19",
+        "max_temp": 82,
+        "min_temp": 55,
+        "avg_wind_speed": 10.5,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Mostly Sunny",
+        "imageURL": "images/image1",
+        "optimal_boating_day": false
+    },
+    {
+        "date": "2024-04-20",
+        "max_temp": 80,
+        "min_temp": 55,
+        "avg_wind_speed": 9.5,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Sunny",
+        "imageURL": "images/image1",
+        "optimal_boating_day": false
+    },
+    {
+        "date": "2024-04-21",
+        "max_temp": 84,
+        "min_temp": 56,
+        "avg_wind_speed": 10.25,
+        "haze": 0,
+        "thunderstorm": 0,
+        "short_forecast": "Sunny",
+        "imageURL": "images/image1",
+        "optimal_boating_day": false
+    }
+]
